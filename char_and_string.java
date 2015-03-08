@@ -53,7 +53,7 @@ System.out.format("My name is %s, hello everyone\n",name);
 
 					 
 					 
-// HOW TO MEASURE THE LENGHT OF A STRING
+// HOW TO MEASURE THE LENGTH OF A STRING
 
 int len= name.length();     // the command .length() allows to measure the lenght of the string. 
 
