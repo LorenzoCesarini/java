@@ -33,9 +33,13 @@ System.out.println("First Attempt: The variables num  and newnum have been assig
 System.out.println("Second Attempt: The variables num  and newnum have been assigned the values: " + num+ "\t"+ newnum); 
 //  the tab  works but this is more complex than other programming languages SEE BELOW
 
+System.out.println("Second Attempt, take two: The variables num  and newnum have been assigned the values: " + num+ " "+ newnum); //this is a bit simpler
+
+
+
 // third wrong attempt, let's learn how to use format 
 System.out.format("Third attempt: The variables num and newnum have been assigned the values: ", num, newnum); //prints only the text
-System.out.format("\n\n");   // and it doesen't go to a newline that's why I had to print two newline commands  
+System.out.format("\n\n");   // and it doesn't go to a newline that's why I had to print two newline commands  
  
 
 
