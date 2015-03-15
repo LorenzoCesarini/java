@@ -1,7 +1,7 @@
 
 // PROGRAM NUMBER 1
 // THIS PROGRAM PRINTS SOME LINES ON SCREEN  
-// LAST MODIFIED 08/03/2015
+// LAST MODIFIED 15/03/2015
 
 // TO COMPILE TYPE "javac print.java"
 // AFTER THAT TO RUN TYPE "java print"  OR  "java -cp.  print "
@@ -9,13 +9,31 @@
 
 class print {
     public static void main(String[] args) {     
-	         System.out.println("Hello World!"); //Display the string.
+	         System.out.println("Hello World!"); //Displays the string.
    
 
             System.out.println("Programmers' favourite outputs :\nHello, world!\nHello world 2, the revenge."); 
             //    \n can be used to print multiple lines on screen as in C or Python
 
-
+			
+			
+			//How to display the output from multiple print statements all on one line using  .print instead of .println
+            System.out.print("Hello ");
+			System.out.print("World!");
+			System.out.print(" All ");                    // remember to leave blank spaces between the outputs!!
+			System.out.print("these ");
+			System.out.print("words ");
+			System.out.print("will ");
+			System.out.print("be ");
+			System.out.print("printed ");
+			System.out.print("on ");
+			System.out.print("the ");
+			System.out.print("same ");
+			System.out.print("line ");
+			System.out.print("on ");
+			System.out.print("screen.\n"); //If you use .print it is obligatory to use \n at the end to go to a new line 
+			
+			
    }
 }
 
@@ -63,7 +81,11 @@ class print {
 // THE SEMICOLON AND CURLY BRACKETS ARE OBLIGATORY
 
 
-// THE PRINT COMMAND IS " System.out.println(" "); "  AND THE TEXT TO BE SENT ON SCREEN MUST BE WRITTEN WITHIN THE QUOTATION MARKS. 
+// THERE ARE MULTIPLE PRINT COMMANDS: 
+// System.out.println(" "); 
+// System.out.print(" ");
+// WE WILL SEE OTHER TWO PRINT COMMANDS, THE ONES USED TO PRINT VARIABLES USING THE % CONVERTER, IN THE NEXT PROGRAMS.
+// THE TEXT TO BE SENT ON SCREEN MUST BE WRITTEN WITHIN THE QUOTATION MARKS. 
 // IN PLACE OF " ... "  THE QUOTATION MARKS ' ...  '  CANNOT BE USED, OTHERWISE THE USER IS NOTIFIED OF AN ERROR 
 
 
