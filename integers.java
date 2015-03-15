@@ -1,7 +1,7 @@
 
 // Program Number 2
 // In this program we declare and assign various int variables and  print them
-// LAST MODIFIED 08/03/2015
+// LAST MODIFIED 15/03/2015
 
 class integers{
 
@@ -33,7 +33,7 @@ System.out.println("First Attempt: The variables num  and newnum have been assig
 System.out.println("Second Attempt: The variables num  and newnum have been assigned the values: " + num+ "\t"+ newnum); 
 //  the tab  works but this is more complex than other programming languages SEE BELOW
 
-// third wrong attempt
+// third wrong attempt, let's learn how to use format 
 System.out.format("Third attempt: The variables num and newnum have been assigned the values: ", num, newnum); //prints only the text
 System.out.format("\n\n");   // and it doesen't go to a newline that's why I had to print two newline commands  
  
@@ -44,12 +44,18 @@ System.out.format("Fourth attempt: The variables num and newnum have been assign
 
 
 //what if we wanted to print only one variable?
-System.out.format("Fourth attempt: The variables num and newnum have been assigned the values: %d", num);
-// this is the unique working way if you use .format . In this case you must use also %d and the comma 
+System.out.format("The variable num has been assigned the value: %d \n", num);
+// this is the unique working way if you use .format .    With .format  you must use also %d and the comma 
 // NOTICE THAT System.out.println IS MEANT TO PRINT TEXT LINES, THAT'S WHY WE USE THE +, IT IS THE COMMAND TO JOIN DIFFERENT STRINGS!!!!
 // System.out.format INSTEAD  MUST BE USED TO PRINT NUMBERS THAT WE WANT TO PERCEIVED FOR WHAT THEY ARE AND NOT AS STRINGS
 
 
+//fifth attempt: another possible method to print more variables on the same line consists in using  .print and .println 
+System.out.print("Fifth Attempt: The variables num  and newnum have been assigned the values: ");
+System.out.print(num);
+System.out.print(" ");
+System.out.print(newnum);
+System.out.println(".");  // this last line or something like  "System.out.print("\n");"  or  "System.out.print();"   is necessary to go to a new line 
 
 
 //IS IT POSSIBLE TO CARRY OUT OPERATIONS BETWEEN VARIABLES INSIDE THE PRINT? LET'S CHECK 
