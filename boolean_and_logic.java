@@ -1,7 +1,7 @@
 
 // PROGRAM 6
 // WE DESCRIBE HERE BOOLEAN VARIABLES, LOGIC OPERATORS, AND HOW TO IMPLEMENT LOGIC CONDITIONS WITH IF AND ELSE
-// LAST MODIFIED 17/03/2015
+// LAST MODIFIED 18/03/2015
 
 class boolean_and_logic {
 
@@ -198,6 +198,45 @@ default:      //the default is like an else when none of the conditions above is
 
 
 
+
+// AN ALTERNATIVE TO SITUATIONS WICH REQUIRE if AND else: HOW TO USE THE ? OPERATOR
+ 
+
+//first case:  printing on screen if a condition is verified or not  
+int a=12;
+int b=8;
+System.out.println(a>b ? "a is bigger than b " : "a is lower than b");
+
+//Inside the println you need to write the logical condition, then the ?, then the text that must be printed if the logical condition is verified, 
+//then :  and the last part is the text that must be printed if the logical condition is not verified. 
+//In this case since 12>8 it prints "a is bigger than b "
+
+
+
+//second case: assigning a certain value to a variable if a condition is verified or not
+
+int result=  a>b? 3:5;
+System.out.println("The value of the variable result is "+result);
+//the variable result is assigned the value 3 if a>b is true, otherwise it is assigned the value 5 if a>b is false.
+
+
+
+/*remeber for both cases: you can also assign the logical condition to a boolean variable and substitue the logical condition with the variable: 
+
+FIRST CASE:
+int a=12;
+int b=8;
+boolean condition=a>b;
+System.out.println(condition ? "a is bigger than b " : "a is lower than b");
+
+
+SECOND CASE:
+
+boolean condition2=a>b;
+int result= condition2 ? 3:5;
+System.out.println("The value of the variable result is "+result);
+
+*/
 
 }
 }
