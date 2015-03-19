@@ -5,7 +5,7 @@
 
 
 
-class char_and_string {       // INITIALLY I  HAD CALLED THIS PROGRAM char BUT SINCE IT IS A TYPE IDENTIFIER IT IS ILLEGAL TO DO SO 
+class char_and_string {        // INITIALLY I  HAD CALLED THIS PROGRAM char BUT SINCE IT IS A TYPE IDENTIFIER IT IS ILLEGAL TO DO SO 
 
 public static void main(String[] arguments){
 
@@ -84,10 +84,10 @@ System.out.println("The first letter is "+FIRSTLETTER);  // this prints the firs
 //HOW TO ACCESS A SUBSTRING
 
 String firstname=name.substring(0,5);
-System.out.println("The first  name  is "  +firstname); // it prints only Aaaa
+System.out.println("The name  is "  +firstname); // it prints only Aaaa
 
 String secondname=name.substring(6,11);
-System.out.println("The first  name  is " +secondname); // it prints only Bbbb
+System.out.println("The surname  is " +secondname); // it prints only Bbbb
 
 
 
