@@ -78,7 +78,7 @@ System.out.println("The first letter is "+FIRSTLETTER);  // this prints the firs
 //let us change the fifth letter
 
 //name.charAt(4)='C';
-//System.out.println("The modified name now is" +name );        // THESE TWO LINES DON'T WORK 
+//System.out.println("The modified name now is" +name );        // THESE TWO LINES DON'T WORK IN FACT STRINGS ARE IMMUTABLE IN JAVA, SEE BELOW
 
 
 //HOW TO ACCESS A SUBSTRING
@@ -109,6 +109,11 @@ int position2=name.indexOf('a');
 System.out.println(position2);  //it prints only the index of the first hit
  
 
+//How to search a character in a string starting not from the beginning but from a certain index 
+
+String declaration="Rocky single handedly ended Cold war";  
+int newpos=declaration.indexOf('o',6); // It is sufficient to write  the char you are searching and the index from which  the search begins
+System.out.println("The index of the first char 'o' found after the sevent letter is "+newpos); // it prints correctly 29 which corresponds to the 30th letter
  
  
 // HOW TO DETERMINE THE INDEX AT THE BEGINNING OF A SUBSTRING   
@@ -116,9 +121,22 @@ System.out.println(position2);  //it prints only the index of the first hit
 String text="Hello, this is just random junk typed by a monkey";
 // we here want to know the index of the first letter of the word random
 
-int pos=text.indexOf("random");  // NOTCE HERE THAT YOU MUST USE DOUBLE QUOTATION MARKS: "...."
+int pos=text.indexOf("random");  // NOTICE HERE THAT YOU MUST USE DOUBLE QUOTATION MARKS: "...."
  
 System.out.println(pos); // it prints 20 OK
+
+
+
+
+//How to search a substring  starting not from the beginning but from a certain index 
+ 
+String message="I must buy two oranges and two apples"; 
+
+int POS1=message.indexOf("two",15);  //we start to search the substring two from the 14th letter 
+ 
+System.out.println("The index of the substring 'two' found after the 14th letter is "+POS1); // it prints correctly 27 which corresponds to the 28th letter
+
+
 
 
 
@@ -133,6 +151,14 @@ System.out.println(newtext);  // the entrire string text is printed in uppercase
 String newstring=text.substring(20,26).toUpperCase();  // this shows that multiple features can be accessed using the .
                                                 // m has the index 25, we wrote 26 beacuse the last index in the interval is not included
 System.out.println(newstring);  //YES it prints RANDOM in uppercase OK
+
+
+//How to convert a string to lower case
+
+String line="I AM LEGEND";
+System.out.println(  line.toLowerCase()   );
+
+
 
 
 
