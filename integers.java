@@ -120,8 +120,8 @@ System.out.println(number1/number2);  // ratio (gives only the integer part as s
 System.out.println(Math.pow(number1, number2));  // to raise number1 to the number2th  power use Math.pow(base, exponent)
 System.out.println(20%8); // it prints the remainder of the division 20:8 which is 4 OK   
 System.out.println(Math.sqrt(4)); // it prints the square root of 4 which is printed as 2.0
-
-
+long x = Math.round(3.14*20); 
+System.out.println("The value of the variable x is "+x);    //The command Math.round rounds a floating point value off to the nearest integer and returns an int
 
 
 
