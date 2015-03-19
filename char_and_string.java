@@ -164,7 +164,7 @@ System.out.println(  line.toLowerCase()   );
 
 // HOW TO ACCESS A SUBSTRING KNOWING ONLY ITS FIRST AND LAST LETTERS (both letters must be the first occurrences of certain chars)
 
-String text2="Hello, this is just random junk typed by a monkey";
+String text2= "Hello, this is just random junk typed by a monkey";
 // imagine you have a huge string and want the substring wich begins with the first ocurrence of the letter 'r'
 //and ends with the first occurence of the letter 'm'
 
